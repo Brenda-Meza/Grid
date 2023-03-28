@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin:0;
+        }
+        .container{
+            width:100vw;
+            height: 100vh;
+
+            display: grid;
+            grid-template-columns: auto auto auto auto auto;
+            grid-template-rows: auto auto auto auto auto;
+        }
+        #header{
+            background-color:blanchedalmond;
+
+            grid-column-start: 1;
+            grid-column-end: 6;
+            grid-row-start: 1;
+        }
+        #navbar{
+            background-color: antiquewhite;
+
+            grid-column-start: 1;
+            grid-column-end: 1;
+            grid-row-start: 2;
+            grid-row-end: 5;
+        }
+        #main{
+            background-color: burlywood;
+
+            grid-column-start: 2;
+            grid-column-end: 5;
+            grid-row-start: 2;
+            grid-row-end: 5;
+        }
+        #aside{
+            background-color: bisque;
+ 
+            grid-column-start: 5;
+            grid-row-start: 2;
+            grid-row-end: 5;
+        }
+        #footer{
+            background-color: blanchedalmond;
+
+            grid-column-start: 1;
+            grid-column-end: 6;
+            grid-row-start: 5;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="header" class="items">Header</div>
+        <div id="navbar" class="items">Navbar</div>
+        <div id="main" class="items">Main</div>
+        <div id="aside" class="items">Aside</div>
+        <div id="footer" class="items">Footer</div>
+    </div>
+</body>
+</html>
